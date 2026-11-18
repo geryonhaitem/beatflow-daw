@@ -1,0 +1,28 @@
+{
+  "name": "beatflow-daw",
+  "version": "1.0.0",
+  "description": "BeatFlow Studio - Free, Modern & Open Source Digital Audio Workstation for producers (FL Studio alternative)",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "daw",
+    "fl-studio",
+    "music-production",
+    "sampler",
+    "piano-roll",
+    "channel-rack",
+    "beatmaker",
+    "open-source",
+    "web-audio"
+  ],
+  "author": "geryonhaitem",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
