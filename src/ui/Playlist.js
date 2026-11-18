@@ -48,10 +48,10 @@ export class PlaylistUI {
       <div class="playlist-header">
         <div class="playlist-toolbar">
           <div class="playlist-tool-group">
-            <button class="tool-btn active" id="pl-tool-pencil" title="Draw Block (P)"><i class="icon">✏️</i> Draw</button>
-            <button class="tool-btn" id="pl-tool-select" title="Select / Move (S)"><i class="icon">✋</i> Move</button>
-            <button class="tool-btn" id="pl-tool-erase" title="Erase Block (E)"><i class="icon">🗑️</i> Erase</button>
-            <button class="tool-btn" id="pl-tool-slice" title="Cut / Slice (C)"><i class="icon">✂️</i> Slice</button>
+            <button class="tool-btn active" id="pl-tool-pencil" title="Draw Block (P)">DRAW</button>
+            <button class="tool-btn" id="pl-tool-select" title="Select / Move (S)">MOVE</button>
+            <button class="tool-btn" id="pl-tool-erase" title="Erase Block (E)">ERASE</button>
+            <button class="tool-btn" id="pl-tool-slice" title="Cut / Slice (C)">CUT</button>
           </div>
           <div class="playlist-snap-control">
             <label>Snap:</label>
@@ -68,9 +68,9 @@ export class PlaylistUI {
             <button id="pl-zoom-in" class="icon-btn" title="Zoom In">+</button>
           </div>
           <div class="playlist-legend">
-            <span class="legend-badge drop">🔴 Drop</span>
-            <span class="legend-badge verse">🔵 Verse</span>
-            <span class="legend-badge hook">🟢 Hook</span>
+            <span class="legend-badge drop">DROP</span>
+            <span class="legend-badge verse">VERSE</span>
+            <span class="legend-badge hook">HOOK</span>
           </div>
         </div>
       </div>

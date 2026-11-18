@@ -89,10 +89,14 @@ class BeatFlowApp {
     appEl.innerHTML = `
       <header class="daw-header">
         <div class="brand-section">
-          <div class="brand-logo">⚡</div>
+          <svg class="brand-logo" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e0e2ec" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
           <div class="brand-titles">
-            <span class="brand-name">BeatFlow Studio</span>
-            <span class="brand-tag">v1.0 Pro DAW</span>
+            <span class="brand-name">BEATFLOW STUDIO</span>
+            <span class="brand-tag">DESKTOP WORKSTATION</span>
           </div>
         </div>
 
@@ -100,9 +104,9 @@ class BeatFlowApp {
         <div class="transport-bar">
           <button id="btn-mode-toggle" class="btn-toggle active" title="Toggle Pattern / Song Mode">PAT</button>
           <div class="transport-buttons">
-            <button id="btn-play" class="btn-transport play" title="Play / Pause (Space)">▶</button>
-            <button id="btn-stop" class="btn-transport stop" title="Stop (Space / Escape)">■</button>
-            <button id="btn-record" class="btn-transport rec" title="Record">●</button>
+            <button id="btn-play" class="btn-transport play" title="Play / Pause (Space)">PLAY</button>
+            <button id="btn-stop" class="btn-transport stop" title="Stop">STOP</button>
+            <button id="btn-record" class="btn-transport rec" title="Record">REC</button>
           </div>
 
           <div class="tempo-control">
@@ -117,27 +121,27 @@ class BeatFlowApp {
             <span id="swing-val">0%</span>
           </div>
 
-          <button id="btn-metronome" class="btn-icon" title="Metronome (Click)">⏱️</button>
+          <button id="btn-metronome" class="btn-text-toggle" title="Metronome">METRO</button>
         </div>
 
         <!-- Master Meter & Actions -->
         <div class="header-right">
-          <div class="status-badge standby" id="audio-status-badge">Click anywhere to start Audio</div>
-          <button id="btn-demo-load" class="btn-action demo" title="Reload Demo Beat">✨ Demo Beat</button>
-          <button id="btn-export-wav" class="btn-action export" title="Export Lossless WAV">💾 Export WAV</button>
-          <button id="btn-save-project" class="btn-action save" title="Save Project JSON">📁 Save</button>
-          <button id="btn-load-project" class="btn-action load" title="Load Project JSON">📂 Open</button>
+          <div class="status-badge standby" id="audio-status-badge">DSP ENGINE STANDBY</div>
+          <button id="btn-demo-load" class="btn-action demo" title="Reset Demo Project">DEMO BEAT</button>
+          <button id="btn-export-wav" class="btn-action export" title="Export Lossless WAV">EXPORT WAV</button>
+          <button id="btn-save-project" class="btn-action save" title="Save Project JSON">SAVE</button>
+          <button id="btn-load-project" class="btn-action load" title="Load Project JSON">OPEN</button>
           <input type="file" id="file-project-loader" accept=".json" style="display:none;" />
         </div>
       </header>
 
       <!-- View Switcher Tabs -->
       <nav class="daw-nav">
-        <button class="nav-tab active" data-tab="rack"><span class="tab-icon">🎛️</span> Channel Rack</button>
-        <button class="nav-tab" data-tab="pianoroll"><span class="tab-icon">🎹</span> Piano Roll</button>
-        <button class="nav-tab" data-tab="sampler"><span class="tab-icon">✂️</span> Waveform Sampler & Chops</button>
-        <button class="nav-tab" data-tab="mixer"><span class="tab-icon">🎚️</span> Mixer & DSP</button>
-        <button class="nav-tab" data-tab="playlist"><span class="tab-icon">📜</span> Playlist Arranger</button>
+        <button class="nav-tab active" data-tab="rack">CHANNEL RACK</button>
+        <button class="nav-tab" data-tab="pianoroll">PIANO ROLL</button>
+        <button class="nav-tab" data-tab="sampler">AUDIO SAMPLER</button>
+        <button class="nav-tab" data-tab="mixer">MIXER</button>
+        <button class="nav-tab" data-tab="playlist">PLAYLIST</button>
       </nav>
 
       <!-- Main Workspace Views -->

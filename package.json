@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "desktop": "electron electron/main.cjs",
+    "start": "electron electron/main.cjs",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -23,6 +25,7 @@
   "author": "geryonhaitem",
   "license": "MIT",
   "devDependencies": {
+    "electron": "^45.3.4",
     "vite": "^5.4.0"
   }
 }
